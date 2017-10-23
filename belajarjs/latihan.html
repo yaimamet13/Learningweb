@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+</head>
+<body>
+    
+        <script >
+            var i =0;
+                while(i<10){
+                    document.write(i);
+                    i++;
+                }
+
+            var k = 100;
+            do{
+                document.writeln(k);
+                k++;
+            }while(k<10);
+
+            for(i=0; i<10; i++){
+                document.write("<br>"+i);
+            }
+
+            if(confirm("Anda sehat?")==true){
+                alert('Selamat');
+            }else{
+                alert('Coba Kedoketr');
+            }
+
+                var nama = prompt('Nama penumpang ');
+                var kursi = prompt('pilih kursi no kursi');
+                var tujuan = prompt('tujuan keberangkatan ');
+                var jam = prompt('masukan jam  keberangkatan');
+                
+                var uang = prompt('masukan jumlah uangnya');
+                var harga = (tujuan = 'jakarta') ? 135000 : 130000;
+                if(tujuan = "jakarta"){
+                    kembalian = uang - harga;
+                }
+                
+                
+                document.write('Nama       :'+nama);
+                document.write('<br>tujuan      :'+tujuan);
+                document.write('<br>Kursi       :'+kursi);
+                document.write('<br>Kursi       :'+jam);
+                document.write('<br>harga       :'+harga);
+                document.write('<br>kembalian   :'+kembalian);
+
+                var i =0;
+                while(i<10){
+                    document.write(i);
+                    i++;
+                }
+            </script>
+
+</body>
+</html>
