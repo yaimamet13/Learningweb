@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsiveslides.css">
+    <link rel="stylesheet" href="demo.css">
+    <script src="responsiveslides.min.js"></script>
+    <script>
+        $(function () {
+
+            $("#slider1").responsiveSlides({
+                maxwidth: 800,
+                speed: 800
+            });
+
+            // Slideshow 2
+            $("#slider2").responsiveSlides({
+                auto: false,
+                pager: true,
+                speed: 300,
+                maxwidth: 540
+            });
+
+            // Slideshow 3
+            $("#slider3").responsiveSlides({
+                manualControls: '#slider3-pager',
+                maxwidth: 540
+            });
+
+            $("#slider4").responsiveSlides({
+                auto: false,
+                pager: false,
+                nav: true,
+                speed: 500,
+                namespace: "callbacks",
+                before: function () {
+                    $('.events').append("<li>before event fired.</li>");
+                },
+                after: function () {
+                     $('.events').append("<li>after event fired.</li>");
+                }
+            });
+        })
+    </script>
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+            <h2>Rakhmat Azhari</h2>
+            <div class="menu"></div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="profil.html">Profil</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Portofolio</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+    </header>
+
+    <div class="tengah">
+        <div class="artikel">
+			<img src="resources/images/gambar-artikel.jpg" alt="Gambar Artikel">
+			<h1>Yai vs Jobs</h1>
+			<b>Oktober 21, 2017</b>
+			<b>Views: 3,487,497</b>
+			<p>Steve Jobs and Yai square off in the white virtual world of<a href="">Watch This</a></p>
+		</div>
+    </div>
+
+    <footer>Copyright &copy: 2017.All Right Reserved</footer>
+    
+</body>
+</html>
